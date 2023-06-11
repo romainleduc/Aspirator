@@ -1,4 +1,4 @@
-# Vaccum cleaner
+# Vacuum cleaner
 
 ## Setup
 ```sh
