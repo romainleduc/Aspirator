@@ -26,7 +26,7 @@ export class Grid {
 
   initialize(width: number, height: number, squareSize: number) {
     const canvas = document.createElement('canvas');
-    document.body.appendChild(canvas);
+    document.getElementById('grid')?.appendChild(canvas);
     canvas.id = 'canvas';
     canvas.width = width * (squareSize + this.margin);
     canvas.height = height * (squareSize + this.margin);

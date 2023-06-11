@@ -2,6 +2,12 @@ import { Entity } from '../Entity';
 import { Grid } from '../Grid';
 import { Vector2D } from '../Vector2D';
 
+beforeAll(() => {
+  const grid = document.createElement('div');
+  grid.id = 'grid';
+  document.body.appendChild(grid);
+});
+
 beforeEach(() => {
   const canvas = document.getElementById('canvas');
 

@@ -1,11 +1,14 @@
 import { Grid } from './Grid';
 import { Direction, Player, Orientation } from './Player';
+import { Print } from './Print';
+import { Settings } from './Settings';
+
+Print.printText('size-grid', `x=${Settings.gridX} y=${Settings.gridY}`)
 
 const grid = new Grid();
-grid.initialize(10, 10, 40);
+grid.initialize(Settings.gridX, Settings.gridY, 40);
 const player = new Player(40, 40, Direction.N);
 grid.placeToGrid(player, 5, 5);
-console.log(player.getPosition());
 
 addEventListener('keydown', (event) => {
   switch (event.code) {
@@ -19,8 +22,4 @@ addEventListener('keydown', (event) => {
       grid.moveTo(player, player.getDirection());
       break;
   }
-
-  console.log(event);
-  console.log('Player Position', player.getPosition());
-  // grid.moveTo(player, 0, 0)
 });

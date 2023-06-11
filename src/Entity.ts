@@ -1,7 +1,7 @@
 import { Vector2D } from './Vector2D';
 
 export class Entity {
-  private position: Vector2D;
+  protected position: Vector2D;
   private color;
   private width;
   private height;
@@ -29,26 +29,45 @@ export class Entity {
     return this.height;
   }
 
+  /**
+   * Get both x and y axis value
+   */
   getPosition() {
     return this.position;
   }
 
+  /**
+   * 
+   * Set both x and y axis value
+   */
   setPosition(x: number, y: number) {
     this.position = new Vector2D(x, y);
   }
 
+  /**
+   * Getter for x axis value
+   */
   getX() {
     return this.position.getX();
   }
 
+  /**
+   * Setter for x axis value
+   */
   setX(x: number) {
     this.position.setX(x);
   }
 
+  /**
+   * Getter for y axis value
+   */
   getY() {
     return this.position.getY();
   }
 
+  /**
+   * Setter for y axis value
+   */
   setY(y: number) {
     this.position.setY(y);
   }
