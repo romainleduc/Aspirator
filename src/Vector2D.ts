@@ -22,4 +22,8 @@ export class Vector2D {
   setY(y: number) {
     this.y = y;
   }
+
+  isValid() {
+    return this.x >= 0 && this.y >= 0;
+  }
 }

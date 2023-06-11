@@ -18,8 +18,54 @@ exports[`Grid initialize should place the squares on the grid 1`] = `
     "props": {
       "height": 40,
       "width": 40,
-      "x": 420,
-      "y": 420,
+      "x": 450,
+      "y": 450,
+    },
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "rect",
+  },
+  {
+    "props": {},
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "closePath",
+  },
+]
+`;
+
+exports[`Grid placeToGrid should place the entity on the grid 1`] = `
+[
+  {
+    "props": {},
+    "transform": [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ],
+    "type": "beginPath",
+  },
+  {
+    "props": {
+      "height": 40,
+      "width": 40,
+      "x": 0,
+      "y": 0,
     },
     "transform": [
       1,
